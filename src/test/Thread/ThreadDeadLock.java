@@ -45,7 +45,6 @@ public class ThreadDeadLock implements Runnable {
                 try{
                     Thread.sleep(200);
                 }catch (InterruptedException e){
-
                 }
                 synchronized (zs){
                     zs.get();
